@@ -1,0 +1,8 @@
+ultralytics==8.0.200
+numpy
+opencv-python
+matplotlib
+tqdm
+torch>=1.8.0
+scipy
+pyyaml

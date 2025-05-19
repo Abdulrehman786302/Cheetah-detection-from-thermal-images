@@ -30,6 +30,7 @@ We use the [YOLOv8](https://github.com/ultralytics/ultralytics) object detection
     ```
 2. Create a virtual environment and install dependencies:
 ```bash
+pip install -r requirements.txt
 conda create -n cheetah-env python=3.9 -y
 conda activate cheetah-env
 pip install ultralytics
@@ -45,4 +46,23 @@ yolo task=detect mode=train data=data/cheetah.yaml model=yolov8s.pt epochs=50 im
 Run inference on a folder of images or a video using detect.py:
 ```bash
 python detect.py --weights runs/detect/train/weights/best.pt --source data/test --conf 0.3 --show
+```
+Or use the Ultralytics CLI:
+```bash
+yolo task=detect mode=predict model=best.pt source=data/test imgsz=640
+```
+## 📎 Project Structure
+```bash
+cheetah-detection-thermal/
+│
+├── data/                     # Dataset (downloaded from Roboflow)
+│   ├── train/
+│   ├── valid/
+│   └── test/
+│
+├── detect.py                 # Inference script using YOLOv8
+├── data/cheetah.yaml         # Dataset config file
+├── runs/                     # YOLOv8 output directory
+├── README.md                 # Project documentation
+└── requirements.txt          # Python dependencies
 ```
