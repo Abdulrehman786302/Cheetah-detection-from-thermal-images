@@ -66,3 +66,10 @@ cheetah-detection-thermal/
 ├── README.md                 # Project documentation
 └── requirements.txt          # Python dependencies
 ```
+
+## 🙏 Acknowledgements
+Dataset: Roboflow
+
+Model: Ultralytics YOLOv8
+
+Framework: PyTorch
