@@ -69,7 +69,5 @@ cheetah-detection-thermal/
 
 ## 🙏 Acknowledgements
 Dataset: Roboflow
-
 Model: Ultralytics YOLOv8
-
 Framework: PyTorch
